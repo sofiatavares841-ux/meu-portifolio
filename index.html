@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Sofia</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fffaf7;
+            color: #38313a;
+            line-height: 1.7;
+        }
+
+        header {
+            background: white;
+            padding: 18px 8%;
+            box-shadow: 0 2px 10px #00000010;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: #493b52;
+            font-size: 27px;
+        }
+
+        .logo span, h1 span {
+            color: #bd829b;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #493b52;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #bd829b;
+        }
+
+        .inicio {
+            min-height: 470px;
+            padding: 75px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            background: linear-gradient(120deg, #f8e9ed, #fffaf7);
+        }
+
+        .inicio-texto {
+            max-width: 600px;
+        }
+
+        .destaque {
+            color: #a76582;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            color: #493b52;
+            font-size: 45px;
+        }
+
+        .inicio h2 {
+            color: #6e5b72;
+            margin: 10px 0;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #a76582;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .botao:hover {
+            background: #86516a;
+        }
+
+        .inicial {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: #bd829b;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 95px;
+            font-weight: bold;
+            box-shadow: 12px 12px 0 #ead0da;
+        }
+
+        .secao {
+            padding: 65px 10%;
+        }
+
+        .secao h2 {
+            color: #493b52;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .fundo {
+            background: #f5edf1;
+        }
+
+        .cards, .projetos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-top: 20px;
+        }
+
+        .card, .projeto {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000010;
+        }
+
+        .card h3, .projeto h3 {
+            color: #a76582;
+            margin-bottom: 8px;
+        }
+
+        .projetos {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .contato {
+            text-align: center;
+            background: #f8e9ed;
+        }
+
+        .email {
+            color: #86516a;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        footer {
+            background: #493b52;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 800px) {
+            nav {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .inicio {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .cards, .projetos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 520px) {
+            .cards, .projetos {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">Sofia<span>.</span></h2>
+
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section id="inicio" class="inicio">
+        <div class="inicio-texto">
+            <p class="destaque">OLÁ! SEJA BEM-VINDO(A)</p>
+
+            <h1>Meu nome é <span>Sofia</span></h1>
+
+            <h2>Estudante e apaixonada por aprender.</h2>
+
+            <p>
+                Este é meu portfólio pessoal, onde compartilho
+                um pouco sobre mim, meus interesses, habilidades
+                e projetos escolares.
+            </p>
+
+            <a class="botao" href="#sobre">Conheça meu trabalho</a>
+        </div>
+
+        <div class="inicial">S</div>
+    </section>
+
+    <section id="sobre" class="secao">
+        <p class="destaque">UM POUCO SOBRE MIM</p>
+
+        <h2>Quem sou eu?</h2>
+
+        <p>
+            Sou a Sofia, estudante do ensino médio e uma pessoa
+            curiosa, que gosta de aprender coisas novas e desenvolver
+            projetos. Tenho interesse na área de tecnologia e também
+            pela Agronomia, pois gosto de conhecer diferentes áreas
+            e pensar no meu futuro profissional.
+        </p>
+
+        <p>
+            Durante meus estudos, tenho aprendido sobre programação,
+            criação de páginas para a internet e desenvolvimento
+            de sistemas. Quero continuar evoluindo e colocando
+            minhas ideias em prática.
+        </p>
+    </section>
+
+    <section id="habilidades" class="secao fundo">
+        <p class="destaque">O QUE ESTOU APRENDENDO</p>
+
+        <h2>Minhas habilidades</h2>
+
+        <div class="cards">
+
+            <article class="card">
+                <h3>HTML</h3>
+                <p>Estruturação de páginas e conteúdos para sites.</p>
+            </article>
+
+            <article class="card">
+                <h3>CSS</h3>
+                <p>Estilização de páginas, cores, fontes e layouts.</p>
+            </article>
+
+            <article class="card">
+                <h3>Python</h3>
+                <p>Conhecimentos iniciais de lógica e programação.</p>
+            </article>
+
+            <article class="card">
+                <h3>MySQL</h3>
+                <p>Criação e manipulação de bancos de dados.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="projetos" class="secao">
+        <p class="destaque">MINHAS EXPERIÊNCIAS</p>
+
+        <h2>Projetos escolares</h2>
+
+        <div class="projetos">
+
+            <article class="projeto">
+                <h3>Site de estudos</h3>
+                <p>
+                    Plataforma para estudantes compartilharem
+                    dúvidas e ajudarem uns aos outros.
+                </p>
+            </article>
+
+            <article class="projeto">
+                <h3>Projeto Aura Gym</h3>
+                <p>
+                    Desenvolvimento de um site relacionado
+                    à prática de exercícios físicos.
+                </p>
+            </article>
+
+            <article class="projeto">
+                <h3>Loja virtual</h3>
+                <p>
+                    Criação de uma página de loja de roupas
+                    com carrinho e cadastro de usuários.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="secao contato">
+        <p class="destaque">VAMOS CONVERSAR?</p>
+
+        <h2>Entre em contato</h2>
+
+        <p>
+            Obrigada por conhecer um pouco sobre mim
+            e meus projetos!
+        </p>
+
+        <p class="email">E-mail: adicione seu e-mail aqui</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Sofia — Portfólio pessoal</p>
+</footer>
+
+</body>
+</html>
